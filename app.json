@@ -1,5 +1,5 @@
 {
-  "name": "RAVEN-BOT",
+  "name": "BEN-BOT",
   "description": "A simple yet complicated WhatsApp bot, ♤Enjoy♡",
   "keywords": [
     "bot",
@@ -20,12 +20,12 @@
   "success_url": "/",
   "env": {
     "PREFIX": {
-      "description": "Prefix of RAVEN-BOT Ex: . , / , # , & etc. Put any symbol or leave it blank",
+      "description":"@",
       "required": false
 
     },
     "DEV": {
-      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254114660061,27849061633  ",
+      "description": "254727374449",
       "required": true
     },
     "ANTIDELETE": {
@@ -37,16 +37,16 @@
     
     "AUTOREJECT_CALL": {
       "description": "Put TRUE if you want bot to decline all incoming calls",
-      "value": "TRUE",
+      "value": "FALSE",
       "required": false
     },
     "ANTIFOREIGN": {
       "description": "Input TRUE if you want bot to automatically remove foreigners who are not from your country code joining a group",
-      "value": "FALSE",
+      "value": "TRUE",
       "required": false
     },
     "HEROKU_API": {
-      "description": "Put a Heroku api key here, will be required to update vars in your Dm",
+      "description": "HRKU-1757d587-73c3-40d0-922c-00751e58891a",
       "required": true
     },
     "BAD_WORD": {
@@ -95,7 +95,7 @@
       "required": true
 },
  "ANTIBOT": {
-      "description": "Input TRUE if you want bot to kick other bots from group",
+      "description": "TRUE",
       "required": false
 },
  "CODE": {
@@ -104,32 +104,32 @@
       "required": true
 },
  "SESSION": {
-      "description": "Paste your Session id you received after linking here, as it is required for authenticationn. important!",
+      "description": "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiT0VpSmI4bXo4cmhDM3VFdjFDVzRoak0wQjVDOUwwMms2ODRPYUhYS2Iydz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidjlucXgzeUQ3UFVSOGxDYzdlZGhWYUdJdEZpL1d5N1NOd3RJVGtmQitndz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJlSUcwZG9SQysvblFZR2hLMGVGL1Mrd0F4SWJsNnRxeVltQlF5Ymp1cG1RPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJqMVRhZGN5ZVFiVlRVUzcyRzVNM0FTMldWWVU4SjRBU1RtcU8rWHdRLzJZPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjhMZzIyTWVhNmFDTjlERi91aEZ4cmdTeDZuVU9lMzJsSzVhYlBCbGxRSHc9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IllWcGtxcjRNakIyV3l5WnYrQmtOR2w4Yi9HQzFLeUNZMGdPMVE4Q0xnMG89In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUUpPMWhkcUJBUG1heHVPcmx3SW84QVVjYm5PM0V3MEhTT1RLR2JNMTRIRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWnVQSjlVNSs5NS90WSt6WENpY0s1MUVqSzlQUWJyWXFaQ1k5U3QvVlFtND0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InNNRHAxTUgvdE5xZzNyRlh0dG1JTy9scFVHUEhRSjVvbUU5TlhQaTZrSHlKdzdaSTkyMnBxbTZVY1RnOXJSeEw0Y2hEWUxxWU1CQTQ4ZE5aK2NFU2hRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTE2LCJhZHZTZWNyZXRLZXkiOiJwR09VQ2Myc0ZLNVk1SSt6L2ZvSGVpMUR5c01ZcWxnOGFJOGhiMHY0ZGRRPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjI1NDcyNzM3NDQ0OUBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiI1RTgzMkEzNTJBOTkwQzQxQUVDMkM4NDRBQUQzQTk2NyJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzQ3MDI0MzQ4fSx7ImtleSI6eyJyZW1vdGVKaWQiOiIyNTQ3MjczNzQ0NDlAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiMTkyNjEyREE1N0ZDQUExNEM3QkMxMDkzOEE3NDEyMkMifSwibWVzc2FnZVRpbWVzdGFtcCI6MTc0NzAyNDM1NH1dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiNVVISmtlNHpRaC1XZlNhWW11ZF9rUSIsInBob25lSWQiOiIxNTc2MWU3Yy03MDNhLTRmMjgtODdmZS1hY2NmMTY3YWJhNzYiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNG1mVE5SdHkwUGswWGpRQjYwQkM4UnR0M240PSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InlpZE9vVEptbDh4U2x0SUt0ZHZJcStab3Yraz0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJUQjJBQ0c0WiIsIm1lIjp7ImlkIjoiMjU0NzI3Mzc0NDQ5OjUxQHMud2hhdHNhcHAubmV0IiwibmFtZSI6IkJlbiJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDTmVPMEtRSEVMcnpoY0VHR0FNZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoicXNySk4wbXlqM3ZSVWdvdEVYSkorSGg3dTc0T3dRdGdxQUVYQzFNNDh5WT0iLCJhY2NvdW50U2lnbmF0dXJlIjoiUXlWMjk2LzJVbnQxalJSMjZUUVdJcTcyYzdCeVFJVDkxTGZFbHNZZ2ZWVXp6MHdNVVkxRStiQ2ZXdVF4VXVEZVh3Rks1akx2YURIYjhuSmJ2Z3BkQnc9PSIsImRldmljZVNpZ25hdHVyZSI6IlJtT2s5dU43YXE2dFIzRjJjNEhkV29OaHMySVJDRm9LZUZsenQ2RS9hMlU0cC9BQWNWdCtYZVhWZWJiQTQyNXFuOUZ3ZVgzN3EybWljMXltZzdRNGlBPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjU0NzI3Mzc0NDQ5OjUxQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmFyS3lUZEpzbzk3MFZJS0xSRnlTZmg0ZTd1K0RzRUxZS2dCRnd0VE9QTW0ifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3NDcwMjQzMjgsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBR2ZDIn0=",
       "required": true
 },
  "MODE": {
       "description": "Input PRIVATE if you don't want other people to use your bot",
-      "value": "PUBLIC",
+      "value": "PRIVATE",
       "required": true
     },
     
  "AUTOBIO": {
       "description": "Input TRUE if you want bot to autoupdate its about with current time and date.",
-      "value": "TRUE",
+      "value": "FALSE",
       "required": false
 },
  "APP_NAME": {
-      "description": "Input your app name that you put above, Must be in small letters.",
+      "description": "ben",
       "required": true
 },
  "STICKER_AUTHOR": {
       "description": "Input sticker data for author",
-      "value": "RAVEN-BOT",
+      "value": "Ben",
       "required": false
 },
  "STICKER_PACKNAME": {
       "description": "Input sticker data for packname",
-      "value": "RAVEN-BOT",
+      "value": "Ben-BOT",
       "required": false
 },
  "GPT_INBOX": {
